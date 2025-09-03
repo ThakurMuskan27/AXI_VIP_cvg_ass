@@ -5,7 +5,7 @@
 //  FILE NAME = axi_coverage.svh
 //  ENGINEER  = Muskan
 //  VERSION   = 1.0 
-//  DESCRIPTION = contains all macro 
+//  DESCRIPTION =  
 //
 /////////////////////////////////////////////////////
 
