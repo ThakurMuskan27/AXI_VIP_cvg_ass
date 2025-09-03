@@ -45,8 +45,8 @@ module axi_assertion #(int DATA_WIDTH = 16, ADD_WIDTH = 8, ID_WIDTH = 8 ) ( inpu
                                    else $error($time," WADDR CHANNEL HANDSHAKING ASSERTION FAILED [WAIT] !!! ");
       
       AWValid_No_Wait_property_check : assert property(awready_prop2)
-                                   $info($time," WADDR CHANNEL HANDSHAKING ASSERTION PASSED !!! ");
-                                   else $error($time," WADDR CHANNEL HANDSHAKING ASSERTION FAILED !!! ");
+                                     $info($time," WADDR NOT UNKNOWN DATA HANDSHAKING ASSERTION PASSED !!! ");
+                                     else $error($time," WADDR NOT UNKNOWN DATA HANDSHAKING ASSERTION FAILED !!! ");
 
 ////=============  READ ADDR HANDSHAKING ===============================================================================================//// 
       sequence stable_ardata_seqs;
@@ -73,8 +73,8 @@ module axi_assertion #(int DATA_WIDTH = 16, ADD_WIDTH = 8, ID_WIDTH = 8 ) ( inpu
                                    else $error($time," RADDR CHANNEL HANDSHAKING ASSERTION FAILED !!! ");
       
       ARValid_No_Wait_property_check : assert property(arready_prop1)
-                                   $info($time," RADDR CHANNEL HANDSHAKING ASSERTION PASSED !!! ");
-                                   else $error($time," RADDR CHANNEL HANDSHAKING ASSERTION FAILED !!! ");
+                                      $info($time," RADDR CHANNEL NOT UNKNOWN DATA ASSERTION PASSED !!! ");
+                                      else $error($time," RADDR NOT UNKNOWN DATA ASSERTION FAILED !!! ");
       
 ////=============  WRITE DATA HANDSHAKING ===============================================================================================//// FAILING //// 
       sequence stable_wdata_seqs;
@@ -107,7 +107,7 @@ module axi_assertion #(int DATA_WIDTH = 16, ADD_WIDTH = 8, ID_WIDTH = 8 ) ( inpu
 ////=============  RVALID HANDSHAKING ===============================================================================================//// 
 
      sequence rvalid_seqs;
-        $past( inf.arvalid , , inf.arvalid && inf.arready, ); 
+     $past( inf.arvalid , , inf.arvalid && inf.arready, ); ////TODO
      endsequence 
       
      property rvalid_prop;
