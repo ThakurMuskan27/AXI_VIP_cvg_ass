@@ -1,0 +1,2 @@
+var g_data = {"18":{"cvpc":[{"h":["awaddr_cp",4,1,19],"cov":[3,0,0.00],"opts":{"goal":"100"}},{"h":["awdata_cp",4,1,20],"cov":[3,1,33.33],"opts":{"goal":"100"}},{"h":["awburst_cp",4,1,21],"cov":[3,1,33.33],"opts":{"goal":"100"}},{"h":["awlen_cp",4,1,22],"cov":[71,2,2.81],"opts":{"goal":"100"}},{"h":["cross_burst_len_cp",8,1,23],"cov":[138,1,0.72],"opts":{"goal":"100"},"cvps":["awburst_cp","awlen_cp"]}],"cvg":["/axi_env_pkg/axi_coverage/axi_cvg",1],"cvgdata":[80,4,138,1]}};
+processCoverpointsData(g_data);

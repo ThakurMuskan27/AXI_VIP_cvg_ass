@@ -1,0 +1,30 @@
+axi_Test_Top
+    - axi_test_pkg
+    - axi_env             d
+       - axi_env_pkg   
+       - axi_env_cfg   d
+       - axi reference model  d
+       - axi_scoreboard       d
+       - axi_coverage_collector  d
+       - axi_master_uvc/     d 
+         master_agent_top
+              - master_agent  d
+              - axi_mas_pkg  d
+              - axi_magt_cfg  d
+              - axi_mas_drv  d
+              - axi_mas_mon  d
+              - axi_mas_seqr d
+              - axi_mas_if     d
+              - axi_mseq_item   d
+              - axi_mas_base_seqs   d
+    - axi_slave_uvc/
+         Slave_agent_top      d
+              - Slave_agent  d
+              - axi_slv_pkg  d
+              - axi_sagt_cfg  d
+              - axi_slv_drv   d
+              - axi_slv_mon   d 
+              - axi_slv_seqr  d
+              - axi_slv_if    d
+              - axi_sseq_item  d
+              - axi_slv_base_seqs   d

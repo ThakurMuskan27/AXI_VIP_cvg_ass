@@ -1,0 +1,2 @@
+var g_data = {"8":["work.axi_assertion",50.00,1],"5":["work.axi_env_pkg",14.93,1],"2":["work.axi_minf",56.78,1],"4":["work.axi_mpkg",17.17,1],"1":["work.axi_sinf",56.78,1],"3":["work.axi_spkg",14.14,1],"6":["work.axi_test_pkg",92.00,1],"7":["work.axi_top",75.00,1]};
+processDuLinks(g_data);

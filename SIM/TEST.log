@@ -1,0 +1,639 @@
+# vsim -coverage -vopt axi_top -c -do "coverage save -onexit -directive -cvg -codeall AXI_CVG.ucdb; run -all; exit" "+RESET_IN_BET" -l TEST.log 
+# Start time: 17:51:16 on Aug 21,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Sim-64
+# //  Version 2023.4 linux_x86_64 Oct  9 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.axi_sinf(fast)
+# Loading work.axi_minf(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.axi_spkg(fast)
+# Loading work.axi_mpkg(fast)
+# Loading work.axi_env_pkg(fast)
+# Loading work.axi_test_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.axi_top(fast)
+# Loading work.axi_minf(fast__2)
+# Loading work.axi_sinf(fast__3)
+# Loading work.axi_minf(fast__3)
+# Loading work.axi_sinf(fast__4)
+# Loading work.axi_assertion(fast)
+# ** Warning: (vsim-8637) A modport ('SDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_sdrv #(32, 32) File: ../ENV/AXI_S_AGENT/axi_sdrv.svh Line: 63
+# ** Warning: (vsim-8637) A modport ('SDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_sdrv #(32, 32) File: ../ENV/AXI_S_AGENT/axi_sdrv.svh Line: 66
+# ** Warning: (vsim-8637) A modport ('SDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_sdrv #(32, 32) File: ../ENV/AXI_S_AGENT/axi_sdrv.svh Line: 67
+# ** Warning: (vsim-8637) A modport ('SDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_sdrv #(32, 32) File: ../ENV/AXI_S_AGENT/axi_sdrv.svh Line: 68
+# ** Warning: (vsim-8637) A modport ('SDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_sdrv #(32, 32) File: ../ENV/AXI_S_AGENT/axi_sdrv.svh Line: 80
+# ** Warning: (vsim-8637) A modport ('SDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_sdrv #(32, 32) File: ../ENV/AXI_S_AGENT/axi_sdrv.svh Line: 83
+# ** Warning: (vsim-8441) Clocking block output svif.SDRV_MP.sdrv_cb.bvalid is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_sdrv #(32, 32) File: ../ENV/AXI_S_AGENT/axi_sdrv.svh Line: 83
+# ** Warning: (vsim-8637) A modport ('SDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_sdrv #(32, 32) File: ../ENV/AXI_S_AGENT/axi_sdrv.svh Line: 84
+# ** Warning: (vsim-8637) A modport ('SDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_sdrv #(32, 32) File: ../ENV/AXI_S_AGENT/axi_sdrv.svh Line: 87
+# ** Warning: (vsim-8637) A modport ('SDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_sdrv #(32, 32) File: ../ENV/AXI_S_AGENT/axi_sdrv.svh Line: 88
+# ** Warning: (vsim-8637) A modport ('SDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_sdrv #(32, 32) File: ../ENV/AXI_S_AGENT/axi_sdrv.svh Line: 109
+# ** Warning: (vsim-8637) A modport ('SDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_sdrv #(32, 32) File: ../ENV/AXI_S_AGENT/axi_sdrv.svh Line: 113
+# ** Warning: (vsim-8637) A modport ('SDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_sdrv #(32, 32) File: ../ENV/AXI_S_AGENT/axi_sdrv.svh Line: 114
+# ** Warning: (vsim-8637) A modport ('SDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_sdrv #(32, 32) File: ../ENV/AXI_S_AGENT/axi_sdrv.svh Line: 117
+# ** Warning: (vsim-8637) A modport ('SDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_sdrv #(32, 32) File: ../ENV/AXI_S_AGENT/axi_sdrv.svh Line: 118
+# ** Warning: (vsim-8637) A modport ('SDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_sdrv #(32, 32) File: ../ENV/AXI_S_AGENT/axi_sdrv.svh Line: 121
+# ** Warning: (vsim-8637) A modport ('SDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_sdrv #(32, 32) File: ../ENV/AXI_S_AGENT/axi_sdrv.svh Line: 123
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 66
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 68
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 68
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 70
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 70
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 75
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 76
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 77
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 78
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 96
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 98
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 98
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 100
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 100
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 104
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 105
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 106
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 107
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 122
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 123
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 123
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 125
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 125
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 129
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 130
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 132
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 149
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 150
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 150
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 156
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 157
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 159
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 177
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 178
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 178
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 180
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 181
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 196
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 198
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 198
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 200
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 201
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 202
+# ** Warning: (vsim-8637) A modport ('SMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 204
+# ** Warning: (vsim-8386) Illegal assignment to type 'enum bit[2:0] axi_spkg::axi_size_se' from type 'reg[2:0]': An enum variable may only be assigned the same enum typed variable or one of its values.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 77
+# ** Warning: (vsim-8386) Illegal assignment to type 'enum bit[1:0] axi_spkg::axi_burst_se' from type 'reg[1:0]': An enum variable may only be assigned the same enum typed variable or one of its values.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 78
+# ** Warning: (vsim-8386) Illegal assignment to type 'enum bit[2:0] axi_spkg::axi_size_se' from type 'reg[2:0]': An enum variable may only be assigned the same enum typed variable or one of its values.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 106
+# ** Warning: (vsim-8386) Illegal assignment to type 'enum bit[1:0] axi_spkg::axi_burst_se' from type 'reg[1:0]': An enum variable may only be assigned the same enum typed variable or one of its values.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 107
+# ** Warning: (vsim-8386) Illegal assignment to type 'enum bit[1:0] axi_spkg::axi_resp_se' from type 'reg[1:0]': An enum variable may only be assigned the same enum typed variable or one of its values.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 181
+# ** Warning: (vsim-8386) Illegal assignment to type 'enum bit[1:0] axi_spkg::axi_resp_se' from type 'reg[1:0]': An enum variable may only be assigned the same enum typed variable or one of its values.
+#    Time: 0 ns  Iteration: 0  Region: /axi_spkg::axi_smon #(32, 32) File: ../ENV/AXI_S_AGENT/axi_smon.svh Line: 201
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 87
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 89
+# ** Warning: (vsim-8441) Clocking block output mvif.MDRV_MP.mdrv_cb.awvalid is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 89
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 90
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 93
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 94
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 95
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 96
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 97
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 123
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 125
+# ** Warning: (vsim-8441) Clocking block output mvif.MDRV_MP.mdrv_cb.arvalid is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 125
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 126
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 129
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 130
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 131
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 132
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 133
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 156
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 160
+# ** Warning: (vsim-8441) Clocking block output mvif.MDRV_MP.mdrv_cb.wvalid is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 160
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 161
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 162
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 165
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 166
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 168
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 187
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 188
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 188
+# ** Warning: (vsim-8441) Clocking block output mvif.MDRV_MP.mdrv_cb.bready is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 188
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 190
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 192
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 193
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 206
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 208
+# ** Warning: (vsim-8441) Clocking block output mvif.MDRV_MP.mdrv_cb.rready is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 208
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 210
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 212
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 216
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 217
+# ** Warning: (vsim-8637) A modport ('MDRV_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 219
+# ** Warning: (vsim-8386) Illegal assignment to type 'enum bit[1:0] axi_mpkg::axi_resp_me' from type 'reg[1:0]': An enum variable may only be assigned the same enum typed variable or one of its values.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 193
+# ** Warning: (vsim-8386) Illegal assignment to type 'enum bit[1:0] axi_mpkg::axi_resp_me' from type 'reg[1:0]': An enum variable may only be assigned the same enum typed variable or one of its values.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mdrv #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mdrv.svh Line: 216
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 69
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 71
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 71
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 73
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 73
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 78
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 79
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 80
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 81
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 99
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 101
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 101
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 103
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 103
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 107
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 108
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 109
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 110
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 125
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 126
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 126
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 128
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 128
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 132
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 133
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 135
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 152
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 153
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 153
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 159
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 160
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 162
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 179
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 180
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 180
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 182
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 183
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 198
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 200
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 200
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 202
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 202
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 203
+# ** Warning: (vsim-8637) A modport ('MMON_MP') should not be used in a hierarchical path.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 205
+# ** Warning: (vsim-8386) Illegal assignment to type 'enum bit[2:0] axi_mpkg::axi_size_me' from type 'reg[2:0]': An enum variable may only be assigned the same enum typed variable or one of its values.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 80
+# ** Warning: (vsim-8386) Illegal assignment to type 'enum bit[1:0] axi_mpkg::axi_burst_me' from type 'reg[1:0]': An enum variable may only be assigned the same enum typed variable or one of its values.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 81
+# ** Warning: (vsim-8386) Illegal assignment to type 'enum bit[2:0] axi_mpkg::axi_size_me' from type 'reg[2:0]': An enum variable may only be assigned the same enum typed variable or one of its values.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 109
+# ** Warning: (vsim-8386) Illegal assignment to type 'enum bit[1:0] axi_mpkg::axi_burst_me' from type 'reg[1:0]': An enum variable may only be assigned the same enum typed variable or one of its values.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 110
+# ** Warning: (vsim-8386) Illegal assignment to type 'enum bit[1:0] axi_mpkg::axi_resp_me' from type 'reg[1:0]': An enum variable may only be assigned the same enum typed variable or one of its values.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 183
+# ** Warning: (vsim-8386) Illegal assignment to type 'enum bit[1:0] axi_mpkg::axi_resp_me' from type 'reg[1:0]': An enum variable may only be assigned the same enum typed variable or one of its values.
+#    Time: 0 ns  Iteration: 0  Region: /axi_mpkg::axi_mmon #(32, 32) File: ../ENV/AXI_M_AGENT/axi_mmon.svh Line: 202
+# Loading /tools/mentor/questa/2023.4/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# coverage save -onexit -directive -cvg -codeall AXI_CVG.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test axi_base_test...
+# ** Warning: (vsim-8549) After dropping the illegal, ignore or invalid values, the values list associated with scalar bin 'ign_reserved_cb' in Coverpoint 'awburst_cp' of Covergroup instance '\/axi_env_pkg::axi_coverage::axi_cvg ' has converged to empty list. The bin will be taken out of coverage calculation.
+#    Time: 0 ns  Iteration: 7  Region: /uvm_pkg::uvm_phase::m_run_phases
+#  RAISE at test 
+#                    0 === Sequence Data === 
+# ** Info: WADDR CHANNEL HANDSHAKING ASSERTION PASSED !!! 25
+#    Time: 25 ns Started: 15 ns  Scope: axi_top.axi_ass_inst.AWValid_Ready_property_check File: ../TOP/axi_assertion.sv Line: 52
+# ** Info: WADDR CHANNEL HANDSHAKING ASSERTION PASSED !!! 35
+#    Time: 35 ns Started: 25 ns  Scope: axi_top.axi_ass_inst.AWValid_Ready_property_check File: ../TOP/axi_assertion.sv Line: 52
+#                   75 *** Slave Monitor Write Data *** 
+#                   75 *** Master Monitor Write Data *** 
+# | size = 1 |
+# i = 1 | awaddr[1] = 00000035 | awaddr[0] = 00000034 | size = 2 |
+# i = 2 | awaddr[2] = 00000036 | awaddr[0] = 00000034 | size = 3 |
+# i = 3 | awaddr[3] = 00000037 | awaddr[0] = 00000034 | size = 4 |
+# i = 4 | awaddr[4] = 00000038 | awaddr[0] = 00000034 | size = 5 |
+# i = 5 | awaddr[5] = 00000039 | awaddr[0] = 00000034 | size = 6 |
+# i = 6 | awaddr[6] = 0000003a | awaddr[0] = 00000034 | size = 7 |
+# i = 7 | awaddr[7] = 0000003b | awaddr[0] = 00000034 | size = 8 |
+# i = 8 | awaddr[8] = 0000003c | awaddr[0] = 00000034 | size = 9 |
+# i = 9 | awaddr[9] = 0000003d | awaddr[0] = 00000034 | size = 10 |
+# i = 10 | awaddr[10] = 0000003e | awaddr[0] = 00000034 | size = 11 |
+# i = 11 | awaddr[11] = 0000003f | awaddr[0] = 00000034 | size = 12 |
+# i = 12 | awaddr[12] = 00000040 | awaddr[0] = 00000034 | size = 13 |
+# i = 13 | awaddr[13] = 00000041 | awaddr[0] = 00000034 | size = 14 |
+# i = 14 | awaddr[14] = 00000042 | awaddr[0] = 00000034 | size = 15 |
+# i = 15 | awaddr[15] = 00000043 | awaddr[0] = 00000034 | size = 16 |
+#                   75: Slave sequence WRITE response 
+#  ==  witem_arr[50]  == 
+# -------------------------------------------------------
+# Name             Type                Size  Value       
+# -------------------------------------------------------
+#  witem_arr[50]   uvm_sequence_item   -     @1299       
+#   operation      operation_se        2     WRITE       
+#   awid           integral            8     'd50        
+#   awaddr         da(integral)        16    -           
+#     [0]          integral            32    'h34        
+#     [1]          integral            32    'h35        
+#     [2]          integral            32    'h36        
+#     [3]          integral            32    'h37        
+#     [4]          integral            32    'h38        
+#     ...          ...                 ...   ...         
+#     [11]         integral            32    'h3f        
+#     [12]         integral            32    'h40        
+#     [13]         integral            32    'h41        
+#     [14]         integral            32    'h42        
+#     [15]         integral            32    'h43        
+#   awlen          integral            8     'd3         
+#   awsize         axi_size_se         3     size_4_BYTES
+#   awburst        axi_burst_se        2     INCR        
+#   wid            integral            8     'd50        
+#   wdata          da(integral)        4     -           
+#     [0]          integral            32    'h5a52d1d3  
+#     [1]          integral            32    'he37bf2d2  
+#     [2]          integral            32    'h9274840c  
+#     [3]          integral            32    'h539a5484  
+#   wstrb          da(integral)        4     -           
+#     [0]          integral            4     'b1111      
+#     [1]          integral            4     'b1111      
+#     [2]          integral            4     'b1111      
+#     [3]          integral            4     'b1111      
+#   bid            integral            8     'd50        
+#   bresp          axi_resp_se         2     OKAY        
+#   arid           integral            8     'd0         
+#   araddr         da(integral)        0     -           
+#   arlen          integral            8     'd0         
+#   arsize         axi_size_se         3     size_1_BYTE 
+#   arburst        axi_burst_se        2     FIXED       
+#   rid            integral            8     'd0         
+#   rdata          da(integral)        0     -           
+#   rresp          array(axi_resp_se)  0     -           
+# -------------------------------------------------------
+#                   75 REF_MODEL GET WRITE DATA 
+#                   95 MASTER DRIVER WRITE RESPONSE 
+#                   95 *** Slave Monitor Write Data with response *** 
+#                   95 *** Master Monitor Write Data with response *** 
+#                   95 MASTER Sequence get WRITE Response 
+# ----------------------------------------------------
+# Name          Type                Size  Value       
+# ----------------------------------------------------
+# mseq_item1    uvm_sequence_item   -     @1250       
+#   operation   operation_me        2     WRITE       
+#   awid        integral            8     'd50        
+#   awaddr      integral            32    'h34        
+#   awlen       integral            8     'd3         
+#   awsize      axi_size_me         3     size_4_BYTES
+#   awburst     axi_burst_me        2     INCR        
+#   wid         integral            8     'd50        
+#   wdata       da(integral)        4     -           
+#     [0]       integral            32    'h5a52d1d3  
+#     [1]       integral            32    'he37bf2d2  
+#     [2]       integral            32    'h9274840c  
+#     [3]       integral            32    'h539a5484  
+#   wstrb       da(integral)        4     -           
+#     [0]       integral            4     'b1111      
+#     [1]       integral            4     'b1111      
+#     [2]       integral            4     'b1111      
+#     [3]       integral            4     'b1111      
+#   wlast       integral            1     'h1         
+#   bid         integral            8     'd50        
+#   bresp       axi_resp_me         2     OKAY        
+#   arid        integral            8     135         
+#   araddr      integral            32    'hd9893def  
+#   arlen       integral            8     'd13        
+#   arsize      axi_size_me         3     size_1_BYTE 
+#   arburst     axi_burst_me        2     FIXED       
+#   rid         integral            8     'd0         
+#   rdata       da(integral)        0     -           
+#   rlast       integral            1     'h0         
+#   rresp       array(axi_resp_me)  0     -           
+#   begin_time  time                64    0           
+# ----------------------------------------------------
+#                   95 === Sequence Data === 
+#                   95|| ---- WRITE RESPONSE SUCCESS !!!! ---- || Success Count = 1
+#                  115 *** Slave Monitor READ ADDR *** 
+#                  115 *** Master Monitor READ ADDR *** 
+#                  115 : Slave sequence READ response 
+#  ==  ritem_arr[245]  == 
+# --------------------------------------------------------
+# Name              Type                Size  Value       
+# --------------------------------------------------------
+#  ritem_arr[245]   uvm_sequence_item   -     @1320       
+#   operation       operation_se        2     READ        
+#   awid            integral            8     'd0         
+#   awaddr          da(integral)        0     -           
+#   awlen           integral            8     'd0         
+#   awsize          axi_size_se         3     size_1_BYTE 
+#   awburst         axi_burst_se        2     FIXED       
+#   wid             integral            8     'd0         
+#   wdata           da(integral)        0     -           
+#   wstrb           da(integral)        0     -           
+#   bid             integral            8     'd0         
+#   bresp           axi_resp_se         2     OKAY        
+#   arid            integral            8     245         
+#   araddr          da(integral)        16    -           
+#     [0]           integral            32    'h34        
+#     [1]           integral            32    'h35        
+#     [2]           integral            32    'h36        
+#     [3]           integral            32    'h37        
+#     [4]           integral            32    'h38        
+#     ...           ...                 ...   ...         
+#     [11]          integral            32    'h3f        
+#     [12]          integral            32    'h40        
+#     [13]          integral            32    'h41        
+#     [14]          integral            32    'h42        
+#     [15]          integral            32    'h43        
+#   arlen           integral            8     'd3         
+#   arsize          axi_size_se         3     size_4_BYTES
+#   arburst         axi_burst_se        2     INCR        
+#   rid             integral            8     245         
+#   rdata           da(integral)        4     -           
+#     [0]           integral            32    'h5a52d1d3  
+#     [1]           integral            32    'he37bf2d2  
+#     [2]           integral            32    'h9274840c  
+#     [3]           integral            32    'h539a5484  
+#   rresp           array(axi_resp_se)  4     -           
+#     [0]           axi_resp_se         2     OKAY        
+#     [1]           axi_resp_se         2     OKAY        
+#     [2]           axi_resp_se         2     OKAY        
+#     [3]           axi_resp_se         2     OKAY        
+# --------------------------------------------------------
+#                  115 REF_MODEL GET READ DATA 
+# --------------------------------------------------------
+# Name              Type                Size  Value       
+# --------------------------------------------------------
+#  ritem_arr[245]   uvm_sequence_item   -     @1324       
+#   operation       operation_me        2     READ        
+#   awid            integral            8     'd0         
+#   awaddr          integral            32    'h0         
+#   awlen           integral            8     'd0         
+#   awsize          axi_size_me         3     size_1_BYTE 
+#   awburst         axi_burst_me        2     FIXED       
+#   wid             integral            8     'd0         
+#   wdata           da(integral)        0     -           
+#   wstrb           da(integral)        0     -           
+#   wlast           integral            1     'h0         
+#   bid             integral            8     'd0         
+#   bresp           axi_resp_me         2     OKAY        
+#   arid            integral            8     245         
+#   araddr          integral            32    'h34        
+#   arlen           integral            8     'd3         
+#   arsize          axi_size_me         3     size_4_BYTES
+#   arburst         axi_burst_me        2     INCR        
+#   rid             integral            8     245         
+#   rdata           da(integral)        4     -           
+#     [0]           integral            32    'h5a52d1d3  
+#     [1]           integral            32    'he37bf2d2  
+#     [2]           integral            32    'h9274840c  
+#     [3]           integral            32    'h539a5484  
+#   rlast           integral            1     'h0         
+#   rresp           array(axi_resp_me)  4     -           
+#     [0]           axi_resp_me         2     OKAY        
+#     [1]           axi_resp_me         2     OKAY        
+#     [2]           axi_resp_me         2     OKAY        
+#     [3]           axi_resp_me         2     OKAY        
+# --------------------------------------------------------
+#                  165 *** Slave Monitor READ Data with response *** 
+#  ==  ritem_arr[245]  == 
+# --------------------------------------------------------
+# Name              Type                Size  Value       
+# --------------------------------------------------------
+#  ritem_arr[245]   uvm_sequence_item   -     @1320       
+#   operation       operation_se        2     READ        
+#   awid            integral            8     'd0         
+#   awaddr          da(integral)        0     -           
+#   awlen           integral            8     'd0         
+#   awsize          axi_size_se         3     size_1_BYTE 
+#   awburst         axi_burst_se        2     FIXED       
+#   wid             integral            8     'd0         
+#   wdata           da(integral)        0     -           
+#   wstrb           da(integral)        0     -           
+#   bid             integral            8     'd0         
+#   bresp           axi_resp_se         2     OKAY        
+#   arid            integral            8     245         
+#   araddr          da(integral)        1     -           
+#     [0]           integral            32    'h34        
+#   arlen           integral            8     'd3         
+#   arsize          axi_size_se         3     size_4_BYTES
+#   arburst         axi_burst_se        2     INCR        
+#   rid             integral            8     245         
+#   rdata           da(integral)        4     -           
+#     [0]           integral            32    'h5a52d1d3  
+#     [1]           integral            32    'he37bf2d2  
+#     [2]           integral            32    'h9274840c  
+#     [3]           integral            32    'h539a5484  
+#   rresp           array(axi_resp_se)  4     -           
+#     [0]           axi_resp_se         2     OKAY        
+#     [1]           axi_resp_se         2     OKAY        
+#     [2]           axi_resp_se         2     OKAY        
+#     [3]           axi_resp_se         2     OKAY        
+# --------------------------------------------------------
+#                  165 MASTER DRIVER READ RESPONSE 
+#                  165 *** Master Monitor READ Data with response *** 
+#                  165|| ---- READ RESPONSE SUCCESS !!!! ---- || Success Count = 2
+#                  165 MASTER Sequence get READ Response 
+#  DROP at test 
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 165: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    4
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# ** Note: $finish    : /tools/mentor/questa/2023.4/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 165 ns  Iteration: 64  Instance: /axi_top
+# Saving coverage database on exit...
+# End time: 17:51:21 on Aug 21,2025, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 162
