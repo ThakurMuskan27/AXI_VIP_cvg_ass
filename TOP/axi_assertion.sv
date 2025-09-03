@@ -13,7 +13,7 @@ module axi_assertion #(int DATA_WIDTH = 16, ADD_WIDTH = 8, ID_WIDTH = 8 ) ( inpu
 
       property reset_prop;
       @(posedge aclk)
-      ( ( areset === 1'b1 ) |-> reset_seqs1 ) and ( $fell(areset) |=> ##[0:$] reset_seqs2 );
+      ( ( areset !== 1'b1 ) |-> reset_seqs1 ) and ( $fell(areset) |=> ##[0:$] reset_seqs2 );
       endproperty
 
       Reset_property_check : assert property(reset_prop)
